@@ -31,8 +31,8 @@ export default class TaskList extends Vue {
   public configs = {
     BPM_URL: "https://bpm2.aot-technologies.com/camunda",
     FORM_IO_API_URL: "https://forms2.aot-technologies.com",
-    FORM_IO_RESOURCE_ID: "60f552cb82fcd45be52ede58",
-    FORM_IO_REVIEWER_ID: "60f552cb82fcd4689d2ede56",
+    FORM_IO_RESOURCE_ID: "6100fae1ba5ac0fa579eefdb",
+    FORM_IO_REVIEWER_ID: "6100fae4ba5ac0daee9eefe0",
     FORM_IO_REVIEWER: "formsflow-reviewer",
     FORM_FLOW_API_URL: "http://206.116.106.147:5000/",
     FORM_FLOW_URL: "http://localhost:3000",
@@ -61,10 +61,10 @@ export default class TaskList extends Vue {
       this.jwttoken = result.data.access_token;
     });
   }
-  created () {
+  created() {
     this.getToken();
   }
-  mounted () {
+  mounted() {
     // this.token = sessionStorage.getItem('token')
     this.isServiceFLowEnabled = true;
     this.getToken();
